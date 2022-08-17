@@ -4,25 +4,25 @@ import { Input } from "./components/Input";
 
 const checkboxList = [
   {
-    type: "checkbox",
+    text: "Male",
   },
   {
-    type: "checkbox",
+    text: "Female",
   },
   {
-    type: "checkbox",
+    text: "Don't want to tell youuu!!",
   },
 ];
 
-const radiosList = [
+const radioList = [
   {
-    type: "radio",
+    text: "Gaming",
   },
   {
-    type: "radio",
+    text: "Learning",
   },
   {
-    type: "radio",
+    text: "Mocking Ed and Nico",
   },
 ];
 
@@ -34,12 +34,35 @@ function App() {
         BACKWARDS
       </Button>
       <Input size="medium" mode="dark" />
-      {checkboxList.map((checkbox) => (
-        <input type={checkbox.type} />
-      ))}
-      {radiosList.map((radio) => (
-        <input type={radio.type} />
-      ))}
+      <li>
+        {checkboxList.map((checkbox) => (
+          <div className="checkbox-list">
+            <input
+              type="checkbox"
+              name="checkboxList"
+              className="checkbox-letters"
+              required
+              onSelect={() => {}}
+            />
+            <label>{checkbox.text}</label>
+          </div>
+        ))}
+      </li>
+
+      <li>
+        {radioList.map((radio) => (
+          <div className="radio-list">
+            <input
+              type="radio"
+              name="radioList"
+              className="radio-letters"
+              required
+              onSelect={() => {}}
+            />
+            <label>{radio.text}</label>
+          </div>
+        ))}
+      </li>
     </div>
   );
 }

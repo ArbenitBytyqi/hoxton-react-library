@@ -1,5 +1,6 @@
 import "./App.css";
 import { Button } from "./components/Button";
+import { Input } from "./components/Input";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Button size="big" secondary>
         BACKWARDS
       </Button>
+      <Input size="medium" mode="dark" />
     </div>
   );
 }

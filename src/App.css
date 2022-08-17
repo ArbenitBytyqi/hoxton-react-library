@@ -47,8 +47,16 @@
   font-size: 15px;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
+  margin-bottom: 5px;
 }
 
 .input{
   margin-left: 1rem;
+  margin-bottom: 5px;
+}
+
+.App{
+  display: grid;
+  grid-auto-flow: row;
+  
 }
